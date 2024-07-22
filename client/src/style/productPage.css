@@ -1,0 +1,130 @@
+.element-page {
+  width: 100%;
+  min-height: 90vh;
+  background-color: #222E50;
+}
+
+a:visited {
+  color: #a9bae9;
+}
+
+.elem {
+  padding: 5px;
+  height: 90vh;
+  background-color: #222E50;
+  display: flex;
+  gap: 5px;
+}
+
+#elem-images {
+  min-width: 30%;
+  height: 100%;
+  background-color: #7EB2DD;
+}
+
+.elem-info {
+  max-width: 45%;
+  background-color: ivory;
+  padding: 10px;
+}
+
+.elem-info #elem-title {
+  border-bottom: solid 1px;
+}
+
+.box-outer {
+  max-width: 15%;
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 7px;
+  color: white;
+}
+
+.q-btn {
+  color: black;
+}
+
+.select-quantity {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px black;
+
+  border-radius: 20px;
+
+  background-color: ivory;
+}
+
+.select-quantity button {
+  display: flex;
+  justify-content: center;
+  width: 35px;
+  height: 100%;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.select-quantity button:nth-child(1) {
+  border-right: solid 1px black;
+  background-color: rgba(128, 128, 128, 0.166);
+}
+
+.select-quantity button:nth-child(3) {
+  border-left: solid 1px black;
+}
+
+.select-quantity button:hover {
+  background-color: rgb(206, 201, 201);
+}
+
+.select-quantity button:active {
+  background-color: rgb(130, 130, 130);
+}
+
+.add-to-cart {
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+  background-color: #7EB2DD;
+  border-radius: 15px;
+}
+
+.add-to-cart:hover {
+  background-color: #3E76A3;
+}
+
+.add-to-cart:active {
+  background-color: #1B598B;
+}
+
+.review-list{
+  color: white;
+  padding: 10px;
+}
+
+.review-form{
+  background-color: ivory;
+}
+
+@media screen and (max-width: 500px) {
+  .elem {
+    flex-direction: column;
+  }
+
+  #elem-images {
+    min-width: 100%;
+    height: 50vh;
+  }
+
+  .elem-info {
+    max-width: 100%;
+  }
+
+  .box-outer {
+    max-width: 100%;
+  }
+  
+}

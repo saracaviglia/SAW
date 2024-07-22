@@ -1,0 +1,35 @@
+.homepage {
+  background-color: #222E50;
+}
+
+.last-added {
+  width: 100%;
+  height: 100%;
+  background-color: #7EB2DD;
+  padding: 10px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: large;
+}
+
+.last-added .elems-seq{
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;  
+  overflow-x: auto;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.last-added .elems-seq .elem{
+  min-width: 300px;
+  height: 400px;
+  background-color: ivory;
+}
+
+.product-card {
+  min-width: 20%;
+}

@@ -1,0 +1,143 @@
+p {
+  font-weight: 500;
+  font-size: large;
+  letter-spacing: 1px;
+}
+
+.cart-page,
+.checkout-page {
+  background-color: #7EB2DD;
+  display: flex;
+  gap: 2vw;
+
+  padding: 4vw 10vw;
+}
+
+.cart-page {
+  flex-direction: row;
+}
+
+.checkout-page {
+  flex-direction: column;
+}
+
+.cart-list {
+  width: 65%;
+  height: 100%;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+}
+.checkout {
+  width: 100%;
+  height: 100%;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+}
+
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.saveNQ {
+  border: 1px solid #e6eed8;
+  border-radius: 10px;
+  padding: .5vh;
+}
+
+.saveNQ:hover {
+  background-color: #cacaca6b;
+}
+
+.saveNQ:active {
+  background-color: #8a8a8aa2;
+}
+
+.cart-item .image {
+  width: 30%;
+  height: 10vw;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.cart-item .details {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.cart-item .details span {
+  display: flex;
+
+  align-items: center;
+  gap: 1vw;
+}
+
+.cart-item .details span div:nth-child(1) {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #d8e4ee;
+  border-radius: 10px;
+
+}
+
+.cart-item .details span div:nth-child(1) p {
+  padding: 0 1vh;
+}
+
+.cart-item .details span div:nth-child(1) button {
+  background-color: gainsboro;
+  &:hover {
+    background-color: #cacaca;
+  }
+  &:active {
+    background-color: #a8a8a8;
+  }
+}
+
+.cart-item .details span div:nth-child(1) button:nth-child(1) {
+  border-radius: 8px 0 0 8px;
+}
+.cart-item .details span div:nth-child(1) button:nth-child(3) {
+  border-radius: 0 8px 8px 0;
+}
+
+.cart-item .details span div:nth-child(2) {
+  gap: 1vw;
+}
+
+.cart-item .details span div:nth-child(2) button {
+  color: #008cff;
+}
+
+.total-price {
+  width: 30%;
+  height: 7vw;
+  padding: 1vw;
+  background-color: white;
+  color: black;
+}
+
+.checkout-btn {
+  width: 100%;
+  height: 5vw;
+  padding: 3vh 4vw;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: 600;
+  letter-spacing: 1px;
+}

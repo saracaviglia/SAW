@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+button {
+  cursor: grabbing;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav,
+footer {
+  min-height: 10vh;
+}
+
+main {
+  max-width: 100vw;
+  min-height: 90vh;
+}
+
+.loader {
+  max-width: 500px;
+  max-height: 200px;
+}
+
+.loader div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+
+  transform: translate(0, -25%);
+}
+
+.loader div svg {
+  width: 80%;
+  background-color: red;
+}
+
+.loader p {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  color: black;
+}
+
+.cookie-banner {
+  display: none;
+  /* Inizialmente nascosto */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.cookie-banner form .accept-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.cookie-banner form .accept-btn:hover {
+  background-color: #45a049;
+  color: #45a049;
+  cursor: pointer;
+}
+
+.cookie-banner form .dont-accept-btn {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.cookie-banner form .dont-accept-btn:hover {
+  color: #f44336;
+}
+
+.saveNQ {
+  display: none;
+}
+
+.invalid {
+  color: #D8000C;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+.disable {
+  background-color: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.btn {
+  background: #c9eb0b;
+  max-width: 500px;
+  max-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: all .25s;
+  margin-top: 20px;
+
+  &:disabled {
+    background-color: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    background: #333;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

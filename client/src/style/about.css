@@ -1,0 +1,23 @@
+.container{
+    background-color: #222E50;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.about {
+    margin: 10px;
+    color: white;
+    width: 50%;
+}
+
+.text{
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}

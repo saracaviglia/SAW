@@ -1,0 +1,119 @@
+.product-card {
+  height: 350px;
+  margin: 5px;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+
+.image {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  bottom: -45%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.product-card:hover .image::before {
+  bottom: 0;
+}
+
+.image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.product-card:hover .image img {
+  transform: scale(1.1);
+}
+
+.details {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.5em 1.5em 2em;
+  background: rgba(0, 0, 0, 0.216);
+  /* backdrop-filter: blur(16px) saturate(120%); */
+  transition: 0.3s;
+  color: #000000;
+  z-index: 2;
+
+  @media screen and (max-width: 500px) {
+    bottom: 0;
+  }
+
+  
+
+}
+
+.product-card:hover .details {
+  bottom: 0;
+}
+
+.details h1 a {
+  font-weight: 700;
+  font-size: .9em;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.details h1 :hover {
+  color: orange;
+}
+
+
+.details .product-rating {
+  position: relative;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 0.25em;
+}
+
+.details .product-tags {
+  display: flex;
+  gap: 0.375em;
+  margin-bottom: 0.875em;
+  font-size: 0.85em;
+}
+
+.details .latest-comment {
+  color: #000000;
+  opacity: .8;
+  line-height: 1;
+  margin-bottom: 1em;
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .product-card {
+    width: 80%;
+  }
+
+}
